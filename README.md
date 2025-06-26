@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧠 AI Career Coach – Full Stack Web App
 
-## Getting Started
+An advanced AI-powered career coaching platform built using **React 19**, **Next.js 15**, **Tailwind CSS**, **NeonDB**, **Prisma**, **Clerk Authentication**, **Inngest**, **Gemini API**, and **Shadcn UI**. This app helps users build resumes, write cover letters, prepare for interviews, and stay informed with industry insights — all in one place.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 🔐 **User Authentication** – Secure login and signup via Clerk.
+- 📝 **Resume Builder** – Create professional AI-assisted resumes.
+- 📄 **Cover Letter Generator** – Customized letters for any job role.
+- 🎯 **Interview Preparation**
+  - Generates random interview questions using Gemini API
+  - Displays progress graph and score
+  - Stores previous quiz answers for future review
+- 📊 **Industry Insights** – Get AI-curated trends and suggestions.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Frontend**: React 19, Next.js 15, Tailwind CSS, Shadcn UI  
+- **Backend**: Prisma ORM, NeonDB (PostgreSQL), Inngest (serverless functions), Gemini API  
+- **Authentication**: Clerk  
+- **Other Tools**: Axios, ReactMarkdown
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔗 Integrations
 
-## Learn More
+- 🔐 [Clerk](https://go.clerk.com/pkesmB9) – Authentication
+- 🗄️ [Neon](https://fyi.neon.tech/4rc) – PostgreSQL database
+- ⚙️ [Inngest](https://innge.st/yt-rsc2) – Serverless functions and workflows
 
-To learn more about Next.js, take a look at the following resources:
+## 📦 Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/ai-career-coach.git
+   cd ai-career-coach
+   
+2. **Install dependencies**
+   ```bash
+   npm install
+   
+3. **Configure environment variables**
+   Create a `.env` file in the root directory of the project and paste the following:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```env
+   DATABASE_URL=your_postgres_connection_string_here
 
-## Deploy on Vercel
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+   CLERK_SECRET_KEY=your_clerk_secret_key
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+   NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+   NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/onboarding
+   NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/onboarding
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   GEMINI_API_KEY=your_google_gemini_api_key
+
+4. **Run the development server**
+   ```env
+   npm run dev
+
+## 🗃️ Database
+
+- Uses NeonDB (PostgreSQL) with Prisma ORM.
+- Stores user data, resumes, cover letters, quiz attempts, scores, and answers.
+
+## 📖 Tutorial Reference
+
+This project was developed with guidance from a YouTube tutorial: 🎥[Build a Full Stack AI Career Coach](https://www.youtube.com/watch?v=UbXpRv5ApKA)  
+Special thanks to the instructor for their detailed walkthrough.
+
