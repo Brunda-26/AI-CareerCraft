@@ -1,4 +1,4 @@
-# 🧠 AI Career Coach – Full Stack Web App
+# 🧠 AI CareerCraft – Full Stack Web App
 
 An advanced AI-powered career coaching platform built using **React 19**, **Next.js 15**, **Tailwind CSS**, **NeonDB**, **Prisma**, **Clerk Authentication**, **Inngest**, **Gemini API**, and **Shadcn UI**. This app helps users build resumes, write cover letters, prepare for interviews, and stay informed with industry insights — all in one place.
 
