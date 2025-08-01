@@ -30,7 +30,7 @@ An advanced AI-powered career coaching platform built using **React 19**, **Next
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Brunda-26/AI-CAREER-COACH
+   git clone https://github.com/Brunda6/AI-CAREER-COACH
    cd ai-career-coach
    
 2. **Install dependencies**
